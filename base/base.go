@@ -1,8 +1,8 @@
 package base
 
 import (
+	"github.com/meshplus/hyperbench-common/common"
 	"github.com/op/go-logging"
-	"github.com/shinyxhh/hyperbench-common/common"
 )
 
 // BlockchainBase the base implementation of blockChain.
