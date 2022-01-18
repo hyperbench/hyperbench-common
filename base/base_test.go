@@ -3,7 +3,7 @@ package base
 import (
 	"testing"
 
-	fcom "github.com/shinyxhh/hyperbench-common/common"
+	fcom "github.com/meshplus/hyperbench-common/common"
 
 	"github.com/stretchr/testify/assert"
 )
