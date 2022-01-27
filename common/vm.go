@@ -13,7 +13,8 @@ type TxContext struct {
 // TxIndex is the unique index of a transaction (`vm.Run`)
 type TxIndex struct {
 	EngineIdx int64 // EngineIdx is the index of engine (maybe support multiple test stage in future)
-	TxIdx     int64 // TxIdx is the index of transaction
+	TxIdx     int64 // TxIdx is the index of sent transaction
+	MissIdx   int64 // MissIdx is the index of missed transaction
 }
 
 // VMContext is the context of vm
