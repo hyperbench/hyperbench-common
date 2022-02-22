@@ -1,7 +1,7 @@
 package base
 
 import (
-	"github.com/meshplus/hyperbench-common/common"
+	"github.com/hyperbench/hyperbench-common/common"
 	"github.com/op/go-logging"
 )
 
