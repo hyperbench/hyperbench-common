@@ -1,4 +1,4 @@
-module github.com/meshplus/hyperbench-common
+module github.com/hyperbench/hyperbench-common
 
 go 1.16
 
