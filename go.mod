@@ -1,6 +1,6 @@
-module github.com/meshplus/hyperbench-common
+module github.com/hyperbench/hyperbench-common
 
-go 1.16
+go 1.15
 
 require (
 	github.com/op/go-logging v0.0.0-20160315200505-970db520ece7
