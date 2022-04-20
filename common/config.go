@@ -4,6 +4,7 @@ package common
 const (
 	BenchmarkDirPath     = "__BenchmarkDirPath__"
 	BenchmarkArchivePath = "__BenchmarkArchivePath__"
+	BenchmarkConfigPath  = "__BenchmarkConfigPath__"
 )
 
 // worker
@@ -35,6 +36,8 @@ const (
 	EngineDurationPath = "engine.duration"
 	EngineCapPath      = "engine.cap"
 	EngineURLsPath     = "engine.urls"
+	EngineInstantPath  = "engine.instant"
+	EngineWaitPath     = "engine.wait"
 )
 
 // client
