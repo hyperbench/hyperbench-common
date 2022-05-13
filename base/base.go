@@ -23,6 +23,10 @@ type ClientConfig struct {
 
 	// options
 	Options map[string]interface{} `mapstructure:"options"`
+
+	// index
+	VmID     int `mapstructure:"vmID"`
+	WorkerID int `mapstructure:"workerID"`
 }
 
 // Confirm confirm invoke result for tx.

@@ -28,6 +28,13 @@ type Context string
 
 // Statistic contains statistic time.
 type Statistic struct {
-	From int64 `mapstructure:"from"`
-	To   int64 `mapstructure:"to"`
+	From *ChainInfo `mapstructure:"from"`
+	To   *ChainInfo `mapstructure:"to"`
+}
+
+// ChainInfo contains txCount and blockHeight.
+type ChainInfo struct {
+	TxCount     uint64 `mapstructure:"txCount"`
+	BlockHeight int64  `mapstructure:"blockHeight"`
+	TimeStamp   int64  `mapstructure:"timeStamp"`
 }

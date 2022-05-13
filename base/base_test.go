@@ -40,7 +40,7 @@ func TestBase(t *testing.T) {
 	err = b.ResetContext()
 	assert.NoError(t, err)
 
-	rs, err := b.Statistic(fcom.Statistic{From: int64(0), To: int64(1)})
+	rs, err := b.Statistic(fcom.Statistic{From: &fcom.ChainInfo{BlockHeight: 0}, To: &fcom.ChainInfo{BlockHeight: 1}})
 	assert.NotNil(t, rs)
 	assert.NoError(t, err)
 

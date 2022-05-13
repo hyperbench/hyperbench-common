@@ -40,5 +40,5 @@ type Blockchain interface {
 	Statistic(statistic Statistic) (*RemoteStatistic, error)
 
 	// LogStatus records blockheight and time
-	LogStatus() (int64, error)
+	LogStatus() (*ChainInfo, error)
 }
