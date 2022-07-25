@@ -51,6 +51,12 @@ const (
 	ClientPluginPath       = "client.plugin"
 )
 
+// verify
+const (
+	VerifyEnablePath     = "verify.enable"
+	VerifyPercentagePath = "verify.percentage"
+)
+
 // recorder
 const (
 	//
