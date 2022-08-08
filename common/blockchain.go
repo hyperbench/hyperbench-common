@@ -15,6 +15,9 @@ type Blockchain interface {
 	// Confirm check the result of `Invoke` or `Transfer`
 	Confirm(*Result, ...Option) *Result
 
+	// Verify check the relative time of transaction
+	Verify(*Result, ...Option) *Result
+
 	// Query do some query
 	Query(Query, ...Option) interface{}
 
