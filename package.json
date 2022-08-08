@@ -1,6 +1,6 @@
 {
   "name": "hyperbench-common",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "hyperbench-common is common package used by hyperbench and hyperbench-plugins",
   "main": "index.js",
   "scripts": {
