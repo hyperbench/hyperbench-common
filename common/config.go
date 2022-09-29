@@ -59,13 +59,19 @@ const (
 
 // recorder
 const (
-	//
+	// csv
 	RecorderCsvPath    = "recorder.csv"
 	RecorderCsvDirPath = "recorder.csv.dir"
 	// log
 	LogLevelPath = "recorder.log.level"
 	LogDirPath   = "recorder.log.dir"
 	LogDumpPath  = "recorder.log.dump"
+	// influxdb
+	RecorderInflucDBPath = "recorder.influxdb"
+	InfluxDBUrlPath      = "recorder.influxdb.url"
+	InfluxDBDatabasePath = "recorder.influxdb.database"
+	InfluxDBUsernamePath = "recorder.influxdb.username"
+	InfluxDBPasswordPath = "recorder.influxdb.password"
 )
 
 // logger
