@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.3](/github.cn/hyperbench/hyperbench-common/compare/v0.0.2...v0.0.3) (2022-09-29)
+
+
+### Features
+
+* **config:** add influxdb configuration ([7a88920](/github.cn/hyperbench/hyperbench-common/commit/7a889201b4cebd3b4b70f4185696a2e51c978678))
+
 ### [0.0.2](/github.cn/hyperbench/hyperbench-common/compare/v0.0.1...v0.0.2) (2022-08-08)
 
 ### 0.0.1 (2022-05-13)
