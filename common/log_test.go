@@ -23,7 +23,8 @@ func TestInitLog(t *testing.T) {
 	m := make(map[string]interface{})
 	m["recorder.log.dump"] = true
 	m["recorder.log.fir"] = ""
-	viper.MergeConfigMap(m)
+	err := viper.MergeConfigMap(m)
+	assert.Nil(t, err)
 	file := InitLog()
 	assert.NotNil(t, file)
 	defer os.RemoveAll("./log")
