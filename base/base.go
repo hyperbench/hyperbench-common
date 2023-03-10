@@ -75,6 +75,26 @@ func (b *BlockchainBase) Query(common.Query, ...common.Option) interface{} {
 	return nil
 }
 
+// InvokeBatch just batch invoke the contract
+func (b *BlockchainBase) InvokeBatch(...common.Invoke) []*common.Result {
+	return nil
+}
+
+// TransferBatch send batch transfer txs, which a amount of money from a account to the other one
+func (b *BlockchainBase) TransferBatch(...common.Transfer) []*common.Result {
+	return nil
+}
+
+// ConfirmBatch check the result of `Invoke` or `Transfer`
+func (b *BlockchainBase) ConfirmBatch(...*common.Result) []*common.Result {
+	return nil
+}
+
+// VerifyBatch check the relative time of transactions
+func (b *BlockchainBase) VerifyBatch(...*common.Result) []*common.Result {
+	return nil
+}
+
 // Option receive some options.
 func (b *BlockchainBase) Option(common.Option) error {
 	return nil
@@ -104,6 +124,9 @@ func (b *BlockchainBase) Statistic(statistic common.Statistic) (*common.RemoteSt
 func (b *BlockchainBase) LogStatus() (int64, error) {
 	return 0, nil
 }
+
+// Close close blockchain and release resource.
+func (b *BlockchainBase) Close() {}
 
 // NewBlockchainBase new blockchain base.
 func NewBlockchainBase(clientConfig ClientConfig) *BlockchainBase {
