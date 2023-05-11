@@ -39,6 +39,18 @@ type Blockchain interface {
 	// Verify check the relative time of transaction
 	Verify(*Result, ...Option) *Result
 
+	// InvokeBatch just batch invoke the contract
+	InvokeBatch(...Invoke) []*Result
+
+	// TransferBatch send batch transfer txs, which a amount of money from a account to the other one
+	TransferBatch(...Transfer) []*Result
+
+	// ConfirmBatch check the result of `Invoke` or `Transfer`
+	ConfirmBatch(...*Result) []*Result
+
+	// VerifyBatch check the relative time of transactions
+	VerifyBatch(...*Result) []*Result
+
 	// Query do some query
 	Query(Query, ...Option) interface{}
 
@@ -65,4 +77,6 @@ type Blockchain interface {
 
 	// LogStatus records blockheight and time
 	LogStatus() (*ChainInfo, error)
+
+	Close()
 }
